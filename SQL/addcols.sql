@@ -1,0 +1,1 @@
+ALTER TABLE newstudent ADD (place VARCHAR(10),marks INT);
