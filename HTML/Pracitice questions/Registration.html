@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      body {
+        background-color:whitesmoke;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input[type="text"], input[type="email"], input[type="password"] {
+        display: block;
+        margin-bottom: 10px;
+        width: 50%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: rosybrown;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: red;
+      }
+
+      .error {
+        color: red;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form id="registration-form" onsubmit="validateForm()">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <div id="name-error" class="error"></div>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <div id="email-error" class="error"></div>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      <div id="password-error" class="error"></div>
+
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+      <div id="confirm-password-error" class="error"></div>
+      
+
+      <input type="submit" value="Register">
+    </form>
+
+    <script src="registration-form.js"></script>
+  </body>
+</html>
